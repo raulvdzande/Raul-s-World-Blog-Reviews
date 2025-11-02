@@ -1,0 +1,12 @@
+# .render.yaml
+services:
+  - type: web
+    name: rauls-corner
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
