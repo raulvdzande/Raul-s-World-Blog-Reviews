@@ -1,10 +1,10 @@
-# .render.yaml
 services:
   - type: web
     name: rauls-corner
     env: node
     plan: free
-    buildCommand: npm run build && npm install
+    buildCommand: npm run build
+    buildCommand: npm install
     startCommand: npm start
     autoDeploy: true
     envVars:
