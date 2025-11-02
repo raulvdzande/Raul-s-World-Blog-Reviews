@@ -3,7 +3,6 @@ services:
     name: rauls-corner
     env: node
     plan: free
-    buildCommand: npm run build
     buildCommand: npm install
     startCommand: npm start
     autoDeploy: true
