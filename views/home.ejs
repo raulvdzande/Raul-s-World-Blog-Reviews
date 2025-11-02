@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Express Blog</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { color: #333; }
+    .post { border-bottom: 1px solid #ddd; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+    .post h2 { color: #007acc; }
+    .date { color: #999; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>My Express Blog</h1>
+  <p>Welcome to my simple blog built with Express.js!</p>
+
+  <% posts.forEach(post => { %>
+    <div class="post">
+      <h2><%= post.title %></h2>
+      <p class="date"><%= post.date %></p>
+      <p><%= post.content %></p>
+    </div>
+  <% }) %>
+</body>
+</html>
